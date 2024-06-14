@@ -23,7 +23,7 @@ class MenuView(APIView):
         serializer = MenuSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
-            return Response({"status": "sucess", "data": serializer.data})
+            return Response({"status": "success", "data": serializer.data})
 
 
 class BookingView(viewsets.ModelViewSet):
