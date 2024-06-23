@@ -8,10 +8,27 @@ from rest_framework.views import APIView
 
 # Create your views here.
 
-
 def home(request):
     return render(request, "index.html", {})
 
+def about(request):
+    return render(request, "about.html", {})
+
+def menu_page(request):
+    menu = Menu.objects.all()
+    return render(request, "menu.html", {"menu": menu})
+
+def display_menu_item(request, pk=None): 
+    if pk: 
+        menu_item = Menu.objects.get(pk=pk) 
+    else: 
+        menu_item = "" 
+    return render(request, 'menu_item.html', {"menu_item": menu_item}) 
+
+
+def book_page(request):
+    bookings = Booking.objects.all()
+    return render(request, "book.html", {})
 
 class MenuView(APIView):
     def get(self, request):

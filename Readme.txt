@@ -1,9 +1,8 @@
 endpoints
 
-restaurant/
-restaurant/menu/
-restaurant/booking
-/restaurant/booking/tables/
-/restaurant/menu/
+menu/
+/booking
+/booking/tables/
+/menu-api/
 /auth/users/  #use this to create a user
 /auth/token/login/  #use this to login

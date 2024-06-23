@@ -1,0 +1,43 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block title %}About - Little Lemon{% endblock %}
+{% block content %}
+<center>
+    <h1>About Us</h1>
+    <div class="about-img"><img src="{% static 'img/restaurant_inside.jpg' %}" alt="little lemon" width="1200px"
+            height="500px"></div>
+</center>
+<div style="text-align: justify;">
+    <p>Welcome to Little Lemon, where the zest for fresh flavors and warm hospitality meet!
+        Nestled in the heart of
+        your city, Little Lemon is a culinary haven for those who cherish the vibrant and diverse tastes of
+        Mediterranean cuisine. Our mission is to create a dining experience that is both delightful and memorable, using
+        only the freshest ingredients and traditional recipes that have been passed down through generations.</p>
+
+    <p>At Little Lemon, we believe in the magic of good food bringing people together. Our menu is a celebration of
+        seasonal produce, succulent meats, and aromatic herbs and spices, crafted with love and served with a smile.
+        From our zesty lemon chicken to our savory lamb kebabs, every dish is prepared to tantalize your taste buds and
+        transport you to the sunny shores of the Mediterranean.</p>
+
+    <p>Our cozy and inviting atmosphere is perfect for any occasion, whether you're enjoying a casual lunch with
+        friends, a romantic dinner for two, or a family celebration. We take pride in our attentive and friendly
+        service, ensuring that every visit to Little Lemon is a delightful escape from the everyday hustle and bustle.
+    </p>
+
+    <p>Join us at Little Lemon, where every meal is a feast, and every guest is part of our family. Come savor the
+        flavors, enjoy the ambiance, and let us share our passion for great food with you. We look forward to welcoming
+        you soon!</p>
+
+    <b>Our Values</b>
+    <ul>
+        <li>Freshness: We source the finest ingredients to ensure every dish is bursting with flavor and goodness.</li>
+        <li>Tradition: Our recipes are rooted in Mediterranean heritage, honoring the time-tested techniques and flavors
+            of</li>
+        the region.
+        <li> Community: We are committed to creating a welcoming space where everyone feels at home.</li>
+        <li> Sustainability: We strive to make choices that are good for our planet, from sourcing locally to reducing
+            waste.</li>
+    </ul>
+    <p>Thank you for choosing Little Lemon. Your satisfaction is our greatest reward.</p>
+</div>
+{% endblock %}
